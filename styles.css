@@ -1,0 +1,41 @@
+/*Applies same font to whole page*/
+*{
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* footer styling */
+#footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: grey;
+	color: white;
+	text-align: center;
+}
+
+/* footer link styling */
+#footer a{
+	text-decoration: none;
+	color: lightgreen;
+}
+
+/* Centers text */
+main{
+	text-align: center;
+}
+
+/* Draws parent parent container ultimately is the slot machine */
+.parentRow {
+    display: flex;
+    flex-direction:row;
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+}
+
+/*Styling for the rows. */
+.column {
+    flex: 1 1 0px;
+    border: 1px solid black;
+}
