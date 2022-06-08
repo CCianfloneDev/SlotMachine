@@ -29,8 +29,9 @@ main{
 .parentRow {
     display: flex;
     flex-direction:row;
-    width: 70%;
+    width: 60%;
     margin: auto;
+	height: 450px;
     padding: 10px;
 }
 
