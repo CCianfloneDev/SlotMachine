@@ -1,22 +1,20 @@
-// Initial load of the site.
-load();
+// Create array of images that will be randomized.
+var images = 
+["images/1.png",
+"images/2.png",
+"images/3.png",
+"images/4.png",
+"images/5.png",
+"images/6.png",
+"images/7.png"];
 
-/* Load function of site.
- *
- * Sets inital state of site elements.
- */
-function load(){
-
-    // Create array of images that will be randomized.
-    var images = 
-    ["images/1.png",
-    "images/2.png",
-    "images/3.png",
-    "images/4.png",
-    "images/5.png",
-    "images/6.png",
-    "images/7.png"];
-    
-    console.log(images.length);
+/* Returns random number to grab image */
+function GetRandomNumber() {
+    var randomNumber = Math.floor(Math.random() * images.length);
+    return randomNumber;
 }
+
+console.log(GetRandomNumber());
+
+
 
