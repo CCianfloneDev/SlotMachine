@@ -27,10 +27,10 @@ main{
 
 /* Draws parent parent container ultimately is the slot machine */
 .parentRow {
-    display: flex;
+	display: flex;
     flex-direction:row;
     width: 60%;
-    margin: auto;
+	margin: auto;
     padding: 10px;
 }
 
@@ -38,7 +38,8 @@ main{
 .column {
     flex: 1 1 0px;
     border: 1px solid black;
-	height: 40vh;
+	height: 380px;
+	width: 380px;
 }
 
 #buttonContainer {
