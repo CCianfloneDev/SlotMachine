@@ -1,3 +1,6 @@
+//On button click call populate cells method.
+document.getElementById("spinButton").addEventListener("click", PopulateCells);
+
 // Create array of images that will be randomized.
 var images = 
 ["images/1.png",
@@ -14,7 +17,12 @@ function GetRandomNumber() {
     return randomNumber;
 }
 
-console.log(GetRandomNumber());
+/* TO DO */
+//Make method for populating images on spin-button click based off random number
 
 
+/* Populates cells using random number, called on button click.*/
+function PopulateCells() {
+    console.log(GetRandomNumber());
+}
 
