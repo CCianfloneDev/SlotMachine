@@ -18,11 +18,16 @@ function GetRandomNumber() {
 }
 
 /* TO DO */
-//Make method for populating images on spin-button click based off random number
+//Add logic for rewards.
 
 
 /* Populates cells using random number, called on button click.*/
 function PopulateCells() {
+    //changes image of each cell using predefined array of images at index of random number.
+    document.getElementById("slotOne").src = images[GetRandomNumber()];
+    document.getElementById("slotTwo").src = images[GetRandomNumber()];
+    document.getElementById("slotThree").src = images[GetRandomNumber()];
+
     console.log(GetRandomNumber());
 }
 
