@@ -24,9 +24,17 @@ function GetRandomNumber() {
 /* Populates cells using random number, called on button click.*/
 function PopulateCells() {
     //changes image of each cell using predefined array of images at index of random number.
-    document.getElementById("slotOne").src = images[GetRandomNumber()];
-    document.getElementById("slotTwo").src = images[GetRandomNumber()];
-    document.getElementById("slotThree").src = images[GetRandomNumber()];
+    var slotOne = document.getElementById("slotOne").src = images[GetRandomNumber()];
+    var slotTwo = document.getElementById("slotTwo").src = images[GetRandomNumber()];
+    var slotThree = document.getElementById("slotThree").src = images[GetRandomNumber()];
+
+    if (slotOne == slotTwo && slotTwo == slotThree)
+    {
+        console.log(slotOne);
+        console.log(slotTwo);
+        console.log(slotThree);
+        console.log("three kities in a row, thats a win.")
+    }
 
     console.log(GetRandomNumber());
 }
