@@ -30,12 +30,22 @@ function PopulateCells() {
 
     if (slotOne == slotTwo && slotTwo == slotThree)
     {
-        console.log(slotOne);
+        WinOverlayOn();
+        /*console.log(slotOne);
         console.log(slotTwo);
         console.log(slotThree);
-        console.log("three kities in a row, thats a win.")
+        console.log("three kities in a row, thats a win.")*/
     }
 
     console.log(GetRandomNumber());
 }
 
+/* function for making the win overlay display. */
+function WinOverlayOn() {
+    document.getElementById("winOverlay").style.display = "block";
+}
+
+/* function for making the win overlay go away */
+  function WinOverlayOff() {
+    document.getElementById("winOverlay").style.display = "none";
+}
